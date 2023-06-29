@@ -2,3 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+span {
+    border: 1px solid #161616;
+    padding: 4px;
+}
