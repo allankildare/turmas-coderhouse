@@ -7,5 +7,87 @@
 </head>
 <body>
     <h1>Página de contato</h1>
+    <form>
+        <input type="text" placeholder="Nome">
+        <input type="password" placeholder="Senha">
+        <button type="reset">Limpar</button>
+        <button type="submit">Fazer login</button>
+    </form>
+
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nomeUsuario" required>
+        <br>
+        <label for="msg">Digite sua mensagem:</label>
+        <br>
+        <textarea name="mensagem" id="msg" cols="30" rows="10" required></textarea>
+        <br>
+        <select id="estado" name="unidadeFederativa" required>
+            <option selected="true" disabled="disabled" value="">Selecione o seu estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+            <option value="EX">Estrangeiro</option>
+        </select>
+        <input type="checkbox" id="aceite" name="aceitaTermos" value="user_aceite">
+        <label for="aceite">Aceito as termos e condições</label>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            <label for="generoUsuario">Gênero:</label>
+            <br>
+            <input type="radio" name="generoUsuario" id="generoMasculino">
+            <label for="generoMasculino">Masculino</label>
+            <input type="radio" name="generoUsuario" id="generoFeminino">
+            <label for="generoFeminino">Feminino</label>
+            <input type="radio" name="generoUsuario" id="naoBinario">
+            <label for="naoBinario">Não-binário</label>
+            <input type="radio" name="generoUsuario" id="outros">
+            <label for="outros">Outros</label>
+            <br>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+            <br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome">
+            <br>
+            <label for="tamanho">Tamanho</label>
+            <select name="" id="">
+                <option disabled selected value="">Selecione o tamanho</option>
+                <option value="G">Grande</option>
+                <option value="M">Médio</option>
+                <option value="P">Pequeno</option>
+            </select>
+            <br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
 </body>
 </html>
