@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: .5rem 1rem;
+}
+.produtos-form {  
+  width: 320px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "prodId prodId"
+    "prodNome prodNome"
+    "preco quantidade"
+    "limpar adicionar"
+  ;
+  gap: 5px 10px
+}
+
+.produtos-form input[type=text] {
+  width: 100%;
+}
+
+.produto-id {
+  grid-area: prodId;
+  width: 100%;
+}
+
+.produto-nome {
+  grid-area: prodNome;
+}
+
+.produto-preco {
+  grid-area: preco;
+}
+
+.produto-quantidade {
+  grid-area: quantidade;
+}
+
+.btn-add-prod {
+  grid-area: adicionar;
+}
+.produtos-form label {
+  display: block;
+}
+.produtos-form label {
+  display: block;
+}
+/* 
+.produtos-form > input[type=text] {
+  width: 320px;
+  padding: 4px;
+}
+
+.produtos-form > input[type=number] {
+  display: inline-block;
+  width: 160px;
+  padding: 4px;
+}
+
+.produtos-form > input[type=submit], .produtos-form > input[type=button] {
+  display: inline-block;
+  width: 160px;
+  padding: 4px;
+} */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotecas</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <button id="btnClick">Clique aqui</button>
+    <button id="toastify">Toast</button>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script>
+        document.getElementById('btnClick').addEventListener('click', () => {
+            Swal.fire({
+                titleText: 'Você clicou neste botão',
+                // text: 'Você quer continuar?<br>Olá',
+                html: 'Você quer continuar?<br>Olá',
+                icon: 'warning',
+                confirmButtonText: 'Sim',
+                denyButtonText: 'Não',
+                showCloseButton: true,
+                showDenyButton: true,
+                timer: 3000,
+                timerProgressBar: true,
+            }).then((result) => {
+                if (result.isConfirmed) console.log('Usuário confirmou')
+            })
+        })
+
+
+        document.getElementById('toastify').addEventListener('click', () => {
+            Toastify({
+                text: 'Primeiro toast',
+                duration: 1000,
+                stopOnFocus: true,
+            }).showToast()
+        })
+    </script>
+</body>
+
+</html>

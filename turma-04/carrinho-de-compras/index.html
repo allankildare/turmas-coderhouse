@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Carrinho de compras</title>
+</head>
+<body>
+    <form class="produtos-form">
+        <div class="produto-id">
+            <label for="produtoID">ID do produto</label>
+            <input type="text" id="produtoID">
+        </div>
+
+        <div class="produto-nome">
+            <label for="produtoNome">Nome</label>
+            <input type="text" id="produtoNome">
+        </div>
+
+        <div class="produto-preco">
+            <label for="produtoPreco">Preço</label>
+            <input type="number" id="produtoPreco">
+        </div>
+        
+        <div class="produto-quantidade">
+            <label for="produtoQuantidade">Quantidade</label>
+            <input type="number" id="produtoQuantidade">
+        </div>
+
+        <input type="submit" id="btnAdicionarProd" class="btn-add-prod" value="Adicionar produto">
+        <input type="button" id="btnLimpaProd" value="Limpar">
+    </form>
+
+    <div id="listaProdutos"></div>
+    <script src="./carrinhoLS.js"></script>
+</body>
+</html>

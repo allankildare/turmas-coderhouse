@@ -1,0 +1,41 @@
+.menu {
+    background-color: var(--cinza);
+    padding: 12px 24px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.menu__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.menu__titulo {
+    color: var(--amarelo);
+}
+
+.menu__navbar > ul {
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+}
+
+.menu__navbar > ul > li{
+    margin-left: 1rem;
+}
+
+a.menu__link, a.menu__link:visited {
+    color: #fafafa;
+    text-decoration: none;
+    transition: ease .4s color;
+}
+
+a.menu__link:hover {
+    color: var(--amarelo);
+}
