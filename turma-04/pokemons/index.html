@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Busca de Pokemons</title>
+
+    <!-- CSS do Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
     <div id="container">
         <input type="text" id="nome">
         <button id="btnBuscaPoke">Buscar</button>
     </div>
-    <script src="pokemon.js"></script>
+
+    <!-- Biblioteca Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Biblioteca Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- script local para requisitar e montar o DOM com novos Pokemons -->
+    <script src="./pokemon.js"></script>
 </body>
 </html>
