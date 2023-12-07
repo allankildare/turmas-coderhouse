@@ -1,0 +1,5 @@
+.appContainer {
+  margin: 0 auto;
+  max-width: var(--default-screen-breakpoint);
+  padding: 16px;
+}
