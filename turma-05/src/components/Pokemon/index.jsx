@@ -51,7 +51,7 @@ function Pokemon() {
       </form>
 
       <section className={styles.pokemonContainer}>
-        <img src={pokemonResponse?.sprites?.front_default || userIcon} />
+        <img src={pokemonResponse?.sprites?.front_default || userIcon} alt="Imagem do Pokémon" />
         {pokemonResponse.hasOwnProperty('name') && <p>Nome: <strong>{pokemonResponse.name}</strong></p>}
       </section>
     </>
