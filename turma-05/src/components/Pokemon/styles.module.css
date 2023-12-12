@@ -1,0 +1,20 @@
+.pokemonForm > input {
+  border: 1px solid #5d5d5d;
+  border-radius: 8px 0 0 8px;
+  border-right: transparent;
+  font-size: 1.125rem;
+}
+
+.pokemonForm > button {
+  border: 1px solid #5d5d5d;
+  border-radius: 0 8px 8px 0;
+  border-left: transparent;
+  font-size: 1.125rem;
+  cursor: pointer;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.pokemonContainer img {
+  max-width: 96px;
+}
