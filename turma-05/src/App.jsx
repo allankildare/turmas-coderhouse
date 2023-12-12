@@ -5,6 +5,7 @@ import Button from './components/Button'
 import Contador from './components/Contador'
 import Cardapio from './components/Cardapio'
 import AppContainer from './components/AppContainer'
+import Pokemon from './components/Pokemon'
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           Alerta
         </Alerta>
         <Cardapio />
+
+        <Pokemon />
       </AppContainer>
 
     </div>
