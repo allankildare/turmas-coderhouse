@@ -1,0 +1,22 @@
+[
+  {
+    "username": "allankildare",
+    "salt": "5966e344c2a8a2a0d25c74eb4f32ff7d",
+    "hash": "d8f5d7894739e9462a831dfdc8f3ce2255bf437f6bac4647320612765ce7e1937494fdd7b8e76e95d18ea58a0a5e6c5731bf97c55c8dc77dda9e9d59b92f0623"
+  },
+  {
+    "username": "joaosilveira",
+    "salt": "eeaa6e4a29722ba3bcc3d89b411eac0c",
+    "hash": "6073110598b927233e7c485ce704b308ae83099e1a9085da407b39c235f37c499c539969dbccb4064253f46191557c213f62cc62aac665d977623dcc34658710"
+  },
+  {
+    "username": "thiagonascimento",
+    "salt": "77d104d0e1b72d5f66e4695034674be3",
+    "hash": "5c18f0461f67888b948d8edbf1b5b2d2d7cc2a2576deee0957e26fb579fd80170aef9c21e37a011af4968583e4c0b681f4f5b6f37c0967055e6673ac51bb1206"
+  },
+  {
+    "username": "nayaraAlmeida",
+    "salt": "db3b14be01deb6eb9fd238b7a16dacd3",
+    "hash": "7c1c8928fb36844658731a4925acf0131a2984a736198b539af51dae56042c7e25c90c2fb8b8654f88f0e02a5947f654c212dc08fa1151185574c8f23a73f5b2"
+  }
+]

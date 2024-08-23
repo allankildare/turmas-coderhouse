@@ -1,0 +1,14 @@
+{
+  "name": "projeto-backend",
+  "version": "0.0.1",
+  "description": "Simples projeto sendo iniciado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Allan Kildare",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/core": "^10.4.1"
+  }
+}
