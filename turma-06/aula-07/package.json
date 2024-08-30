@@ -1,0 +1,15 @@
+{
+  "name": "introducao-express",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js",
+    "start-atividade": "nodemon ./src/atividade-em-sala.js"
+  },
+  "author": "Allan Kildare",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
