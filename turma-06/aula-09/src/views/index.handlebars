@@ -1,0 +1,13 @@
+<h1>Template Handlebar</h1>
+<p>Olá {{user.name}} {{user.lastName}}, bem-vindo(a)!</p>
+<h4>Aqui estão nossos produtos:</h4>
+{{#if isAdmin}}
+    {{#each food}}
+        <div class="product">
+            <p>{{this.name}}</p>
+            <p>R$ {{this.price}}</p>
+        </div>
+    {{/each}}
+{{else}}
+    <p>Usuário não tem permissão!</p>
+{{/if}}

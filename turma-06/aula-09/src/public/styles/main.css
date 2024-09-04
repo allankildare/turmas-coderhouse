@@ -1,0 +1,27 @@
+:root {
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0.5rem 1rem;
+}
+
+h4 {
+    line-height: 1.5;
+    margin-bottom: 0.25rem;
+}
+
+.product {
+    padding: 0.5rem;
+    background-color: #d5d5d5;
+    border: 1px solid #c3c3c3;
+    border-radius: 4px;
+    width: fit-content;
+    margin-bottom: 0.25rem;
+}

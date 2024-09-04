@@ -1,0 +1,1 @@
+console.log('Você está vendo uma página gerada usando Handlebars')

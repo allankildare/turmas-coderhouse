@@ -1,0 +1,17 @@
+{
+  "name": "aula-09",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "author": "Allan Kildare",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^8.0.1",
+    "handlebars": "^4.7.8"
+  }
+}
