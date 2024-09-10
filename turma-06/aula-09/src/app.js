@@ -6,6 +6,7 @@ import { Server } from 'socket.io' // import do Socket.io
 
 // routes
 import viewsRouter from './routes/view.js'
+import usersRouter from './routes/user.js'
 
 const PORT = 8080
 
@@ -25,6 +26,7 @@ app.set('views', viewsPath)
 
 // routes
 app.use('/', viewsRouter)
+app.use('/api/user', usersRouter)
 
 app.use(express.static(publicPath))
 

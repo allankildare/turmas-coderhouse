@@ -25,3 +25,36 @@ h4 {
     width: fit-content;
     margin-bottom: 0.25rem;
 }
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+.user-form label {
+    line-height: 1.5;
+}
+
+.user-form button[type=submit] {
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+}
+
+.toast {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+.toast.error {
+    background-color: #f1a8a8;
+    border: 1px solid #f05858;
+}
+
+.toast.success {
+    background-color: #a0f094;
+    border: 1px solid #54854d;
+}

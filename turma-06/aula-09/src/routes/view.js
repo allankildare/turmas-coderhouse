@@ -25,4 +25,12 @@ router.get('/', (request, response) => {
     })
 })
 
+router.get('/novo-usuario', (request, response) => {
+    response.render('register', {
+        title: 'Coderhouse - Novo usuário',
+        style: 'main.css',
+        script: 'registerUser.js'
+    })
+})
+
 export default router
