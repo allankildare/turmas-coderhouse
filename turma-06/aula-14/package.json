@@ -1,0 +1,16 @@
+{
+  "name": "aula-14",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "author": "Allan Kildare",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "mongoose": "^8.6.3"
+  }
+}
