@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coderhouse</title>
+</head>
+<body>
+    <form id="userForm">
+        <input type="text" name="name" id="name">
+        <input type="text" name="email" id="email"> 
+        <button type="submit">Criar cookie</button>
+        <button id="getCookiesBtn">Exibir cookies</button>
+    </form>
+    <script>
+        function getCookie() {
+            fetch('/getCookie')
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Cookie recebido:', document.cookie);
+                })
+                .catch(error => console.error('Erro ao buscar cookie:', error));
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            fetch('/setCookie', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name: username, email })
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data);
+            })
+            .catch(error => console.error('Erro ao definir cookie:', error));
+        }
+
+        document.getElementById('userForm').addEventListener('submit', submitForm)
+        document.getElementById('getCookiesBtn').addEventListener('click', getCookie)
+    </script>
+</body>
+</html>
