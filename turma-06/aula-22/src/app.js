@@ -4,6 +4,8 @@ import express from 'express'
 import cookieParser from 'cookie-parser'
 import jwt from 'jsonwebtoken'
 import { config } from 'dotenv'
+import initializePassport, { passportCall } from './config/passport.js'
+import passport from 'passport'
 
 config()
 
@@ -17,6 +19,8 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
+initializePassport()
+app.use(passport.initialize())
 
 app.use(express.static(publicPath))
 
@@ -31,6 +35,10 @@ app.post('/login', (request, response) => {
       maxAge: 60 * 60 * 1000,
     })
     .send({ status: 'success', message: 'Logado com sucesso!' })
+})
+
+app.get('/current', passportCall('jwt'), (req, res) => {
+  res.send(req.user)
 })
 
 app.listen(PORT, () => {

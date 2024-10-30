@@ -16,9 +16,15 @@
         <input type="password" name="pass" />
         <br />
         <button type="submit">Entrar</button>
+
+        <button id="testCurrent">Testar current</button>
       </form>
     </main>
     <script>
+      document.getElementById('testCurrent').addEventListener('click', () => {
+        fetch('/current')
+      })
+
       document
         .getElementById('loginForm')
         .addEventListener('submit', (event) => {
