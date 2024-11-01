@@ -1,0 +1,23 @@
+{
+  "name": "aula-24",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon -r dotenv/config ./src/app.js"
+  },
+  "author": "Allan Kildare",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.0",
+    "mongoose-paginate-v2": "^1.8.5",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1"
+  }
+}
