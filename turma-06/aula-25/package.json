@@ -4,7 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ./src/app.js"
+    "dev": "nodemon ./src/app.js --mode DEVELOPMENT",
+    "start": "nodemon ./src/app.js --mode PRODUCTION"
   },
   "author": "Allan Kildare",
   "license": "ISC",
