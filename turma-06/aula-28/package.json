@@ -1,0 +1,21 @@
+{
+  "name": "aula-28",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./src/app.js --mode DEVELOPMENT",
+    "start": "nodemon ./src/app.js --mode PRODUCTION"
+  },
+  "author": "Allan Kildare",
+  "license": "UNLICENSED",
+  "description": "",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1"
+  }
+}
