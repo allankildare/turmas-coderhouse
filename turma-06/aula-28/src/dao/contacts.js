@@ -11,8 +11,16 @@ class Contacts {
       throw new Error(error)
     }
   }
-}
 
-const contactsDAO = new Contacts()
+  async postContact(contactData) {
+    try {
+      const newContact = new contactsModel(contactData)
+      await newContact.save()
+      return newContact
+    } catch (error) {
+      throw new Error(error)
+    }
+  }
+}
 
 export default Contacts
