@@ -1,0 +1,19 @@
+{
+  "name": "coder-eats",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "author": "Allan Kildare",
+  "license": "UNLICENSED",
+  "description": "",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.2"
+  }
+}
