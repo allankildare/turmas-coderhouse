@@ -1,0 +1,17 @@
+{
+  "name": "aula-31",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "author": "Allan Kildare",
+  "license": "UNLICENSED",
+  "description": "Aula sobre testes e mocks com FakerJS",
+  "dependencies": {
+    "@faker-js/faker": "^9.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  }
+}
