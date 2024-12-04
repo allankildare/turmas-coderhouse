@@ -1,0 +1,13 @@
+{
+  "name": "aula-33-yarn",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch ./src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

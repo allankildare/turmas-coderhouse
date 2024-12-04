@@ -1,0 +1,11 @@
+{
+  "name": "aula-33-npm-pacotes",
+  "version": "0.1.0",
+  "description": "Modulo NPM de demonstracao de aula",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Aula 33 da Coderhouse\" && exit 0"
+  },
+  "author": "Allan Kildare",
+  "license": "UNLICENSED"
+}
