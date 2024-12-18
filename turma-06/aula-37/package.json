@@ -1,0 +1,21 @@
+{
+  "name": "aula-37",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch-path=./src ./src/app.js --mode Production",
+    "dev": "node --watch-path=./src ./src/app.js --mode development"
+  },
+  "author": "Allan Kildare",
+  "license": "UNLICENSED",
+  "description": "",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.8.4",
+    "nodemailer": "^6.9.16"
+  }
+}
